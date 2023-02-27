@@ -1,0 +1,286 @@
+---
+title: "An introduction to PRAAT"
+subtitle: 'Invited Talk: College of Charleston'
+author  : "Kyle Parrish"
+date    : "Rutgers University"
+output:
+  xaringan::moon_reader:
+    chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
+    lib_dir: libs
+    css: [default, hygge, rutgers, rutgers-fonts]
+    nature:
+      beforeInit: ["https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+---
+
+```{r, include = FALSE}
+library(here)
+library(tidyverse)
+```
+
+# Praat
+
+.large[
+- PRAAT: A program to analyze and extract acoustic data
+]
+
+--
+
+.large[
+- What can it do with sounds? 
+ - Record  
+ - Analyze 
+ - Segment 
+ - Extract 
+ - Synthesize 
+ - Manipulate 
+]
+
+---
+
+# Record sounds
+
+.pull-left[
+.content-box-blue[
+.large[
+-- Open PRAAT 
+
+-- New - Record mono sound
+
+-- Press "record" and say anything
+
+-- Press "stop" after recording
+
+-- Label the sound "sound_1" under "pat".
+
+-- Press "Save to list"
+]]]
+
+
+---
+
+background-image: url(./img/one_praat_obj.png)
+background-size: contain
+
+---
+
+# Let's look at the sound we just recorded
+
+.pull-left[
+.content-box-blue[
+.large[
+- Click "Sound sound_1" in the PRAAT objects window 
+
+- Click "view and edit"
+]]]
+
+---
+
+background-image: url(./img/two_praat_obj_sound.png)
+background-size: contain
+
+---
+
+# Analyze sounds 
+
+
+.pull-left[
+.content-box-blue[
+.large[
+- What do you notice about the waveform? 
+
+- We have three sounds (or segments), can you identify where /a/ is?
+
+- Why do you notice that's different about the vowel compared to the rest of the word?
+]]]
+
+
+.pull-right[
+.content-box-red[
+.large[
+- It's voiced - and it's periodic 
+
+- The dark portion of the spectrogram is an acoustic correlate of our vocal folds vibrating as we produce voiced speech sounds!
+]]]
+
+---
+
+background-image: url(./img/textgrid_ex.png)
+background-size: contain
+
+---
+
+# Segment sounds 
+
+.pull-left[
+.content-box-blue[
+.large[
+- We can also segment sounds 
+
+ - Click your sound object in the PRAAT object window 
+ - Select "Annotate", then "To TextGrid..." 
+ - Erase all text in the pop-up window 
+ - Type "word, segment" in "All tier names" and press OK
+ - Click and drag to highlight BOTH you Sound and TextGrid
+ - Click View and Edit
+]]]
+
+---
+
+background-image: url(./img/four.png)
+background-size: contain
+
+---
+
+# Segment sounds 
+
+.pull-left[
+.content-box-blue[
+.large[
+- Here, we can actually segment the word and each sound (segment)
+
+- This way, it's possible to extract durations or specific acoustic paramenters from what we are interested in studying. 
+]]]
+
+---
+
+# Segment sounds 
+
+.pull-left[
+.content-box-blue[
+.large[
+- Segment the sound by clicking on a specific point and pressing "enter" to enter on boundary
+
+- You can click to select an interval once you have inserted a boundary and type to label it 
+
+- We could analyze or even extract a selected sound this way
+]]]
+
+---
+
+background-image: url(./img/five.png)
+background-size: contain
+
+---
+
+# Extract a sound 
+
+.pull-left[
+.content-box-blue[
+.large[
+- With your sound and TextGrid open, select the sound /a/ by clicking it 
+
+- Click "file"
+
+- Click "Extract Selected Sound (preserve times)
+
+- We have that sound in our Objects window!
+]]]
+
+---
+
+# Combine sounds 
+
+.pull-left[
+.content-box-blue[
+.large[
+- We can combine sounds, too. 
+
+- Select at least two sounds 
+
+- Click "Combine-" and then "Concatenate"
+
+- The sounds are combined now!
+]]]
+
+---
+
+# Speech synthesis 
+
+.pull-left[
+.content-box-blue[
+.large[
+- PRAAT also has the ability to synthesize speech 
+
+- New - Sound - Create SpeechSynthesizer - Choose Language and Voice variant - click OK
+
+- Select "SpeechSynthesizer..." from your Praat Objects window - to sound - type any text, such as "I like chickens". - Click OK
+
+- Now, we have a robot voice producing this sentence as a sound in our Praat Objects window. 
+]]]
+
+---
+
+background-image: url(./img/six.png)
+background-size: contain
+
+
+---
+
+
+background-image: url(./img/seven.png)
+background-size: contain
+
+
+---
+
+# Sound manipulation 
+
+.pull-left[
+.content-box-blue[
+.large[
+- Let's make a statement a question 
+
+ -- Select Sound - manipulate - To manipulation -  OK -
+ 
+ -- Pitch - Stylize pitch (2 st) - Change the dot positions - close the window - Get resynthesis
+ 
+-- Play the sound again - does it sound like a question?
+]]]
+
+---
+
+
+background-image: url(./img/eight.png)
+background-size: contain
+
+---
+
+
+background-image: url(./img/nine.png)
+background-size: contain
+
+
+---
+# That's all!
+
+.pull-left[
+.content-box-blue[
+.large[
+- We learned, in Praat, how to.. 
+  - record a sound
+  - annotate that sound 
+  - Extract a sound 
+  - create a synthetic sentence 
+  - Manipulate the pitch of an utterance 
+]]]
+
+.pull-right[
+.content-box-red[
+.large[
+- There is a ton more! You can actually script in PRAAT to automate these processes on a large number of sound files.
+]]]
+
+---
+
+class: title-slide-section-grey, middle
+
+# .white[Questions?]
+
+
+
+
+
